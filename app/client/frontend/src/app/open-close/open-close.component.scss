@@ -1,0 +1,20 @@
+@keyframes introAnimation {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.intro {
+  animation: introAnimation 600ms !important;
+}
+
+.fullScreen {
+  width: 100vw;
+  height: 100vh;
+  min-height: 100%;
+  min-width: 100%;
+}
