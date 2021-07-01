@@ -11,5 +11,6 @@ INSTALLED_APPS = [
     'rest_framework_swagger',
     'app.api.article',
     'app.client',
+     'rest_framework_simplejwt',
 
 ]
