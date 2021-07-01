@@ -1,14 +1,32 @@
-<!DOCTYPE html>
+<!DOCTYPE html> {% load static %}
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <title>Frontend</title>
+    <base href="/" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href='{% static "favicon.ico" %}' rel="icon" type="image/x-icon" />
+    <link
+      href='{% static "client/styles.31d6cfe0d16ae931b73c.css" %}'
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main>
-      <h1>Hello</h1>
-    </main>
+    <app-root></app-root>
+    <script
+      defer=""
+      src='{% static "client/runtime.3090f696987ebcfa375a.js" %}'
+      type="text/javascript"
+    ></script>
+    <script
+      defer=""
+      src='{% static "client/polyfills.a652d742b92d048269ea.js" %}'
+      type="text/javascript"
+    ></script>
+    <script
+      defer=""
+      src='{% static "client/main.e8159b422936f6689483.js" %}'
+      type="text/javascript"
+    ></script>
   </body>
 </html>

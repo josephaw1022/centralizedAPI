@@ -1,7 +1,7 @@
 from django.shortcuts import render
-
+from django.views.generic import TemplateView
 # Create your views here.
 
 
-def Index(request):
-    return render(request, 'client/index.html')
+class Index(TemplateView):
+    template_name = 'client/index.html'
