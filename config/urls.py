@@ -18,12 +18,23 @@ from django.urls import path
 from django.urls.conf import include
 from rest_framework.schemas import get_schema_view
 from rest_framework.documentation import include_docs_urls
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 
 urlpatterns = [
+    # Rest Framework
     path('', include('rest_framework.urls')),
+    # Admin
     path('admin/', admin.site.urls),
+    # Frontend
     path('', include('app.client.urls')),
+    # Article Module
     path('api/', include('app.api.article.urls')),
-    path('docs/', include_docs_urls(title="BLOG API")),
+    # API Documentation
+    path('api/', include_docs_urls(title="BLOG API")),
+    # Tokens
+    path('api/token/', TokenObtainPairView.as_view()),
+    path('api/token/refresh/', TokenRefreshView.as_view())
+
+
 ]
