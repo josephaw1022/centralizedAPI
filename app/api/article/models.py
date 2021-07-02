@@ -8,5 +8,5 @@ class Article(models.Model):
     title = models.CharField(max_length=50, blank=False)
     date = models.DateField(auto_now=True)
     content = models.TextField(blank=False)
-    image = models.ImageField()
+    imageUrl = models.CharField(max_length=120, default="")
     active = models.BooleanField(default=True)
