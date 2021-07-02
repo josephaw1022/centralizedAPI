@@ -4,7 +4,7 @@ from .models import Article
 
 
 class ArticleAdmin(admin.ModelAdmin):
-    list_display = ['title', 'content', 'date']
+    list_display = ['title', 'content', 'date', 'imageUrl']
 
 
 admin.site.register(Article, ArticleAdmin)
