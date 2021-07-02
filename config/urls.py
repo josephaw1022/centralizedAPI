@@ -18,6 +18,7 @@ from django.urls import path
 from django.urls.conf import include
 from rest_framework.schemas import get_schema_view
 from rest_framework.documentation import include_docs_urls
+
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 
@@ -32,6 +33,10 @@ urlpatterns = [
     path('api/', include('app.api.article.urls')),
     # API Documentation
     path('api/', include_docs_urls(title="BLOG API")),
+    path('api/schema', get_schema_view(
+        title="Blog API",
+        description="Blog API description",
+    ), name="openapi-schema"),
     # Tokens
     path('api/token/', TokenObtainPairView.as_view()),
     path('api/token/refresh/', TokenRefreshView.as_view())
