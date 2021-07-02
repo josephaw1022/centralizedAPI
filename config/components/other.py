@@ -8,7 +8,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 
 AUTH_PASSWORD_VALIDATORS = [
-    
+
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
@@ -25,3 +25,5 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CORS_ALLOW_ALL_ORIGINS = True
