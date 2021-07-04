@@ -3,8 +3,7 @@ import django_heroku
 from split_settings.tools import include
 
 include(
-    'components/*.py'
+    'local_settings/*.py'
 )
 
 django_heroku.settings(locals())
-
