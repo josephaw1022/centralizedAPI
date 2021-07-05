@@ -8,5 +8,5 @@ MessageField = [
     'phonenumber',
     'subject',
     'message',
-    'email',
+    'email'
 ]
