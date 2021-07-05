@@ -29,4 +29,4 @@ This is not a quickstart intro for Django. This will take some time, but you wil
 - Then to migrate the app, run the command: <b> python3 manage.py migrate --setting=config.local.settings </b> 
 - Finally, run: <b> python3 manage.py runserver --settings=config.local.settings </b> 
 
-## 
+## Develop Away 
