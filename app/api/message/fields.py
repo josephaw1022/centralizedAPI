@@ -1,7 +1,7 @@
 
 # Fields to be serialized
 
-MessageFields = [
+MessageField = [
     'id',
     'first_name',
     'last_name',

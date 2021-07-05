@@ -9,3 +9,6 @@ class Message(models.Model):
     subject = models.CharField(max_length=30)
     message = models.TextField()
     email = models.EmailField(blank=False)
+
+
+
