@@ -5,7 +5,8 @@ MessageField = [
     'id',
     'first_name',
     'last_name',
-    'phone_number',
+    'phonenumber',
+    'subject',
     'message',
-    'email'
+    'email',
 ]
