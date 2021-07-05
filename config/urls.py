@@ -31,17 +31,18 @@ urlpatterns = [
     # Article Module
     path('api/', include('app.api.article.urls')),
     # API Documentation
-    path('api/', include_docs_urls(title="BLOG API")),
+    path('api/', include_docs_urls(title="Centralized API")),
     path('api/schema', get_schema_view(
-        title="Blog API",
-        description="Blog API description",
+        title="Centralized API",
+        description="All my endpoints for future side projects will be put here",
     ), name="openapi-schema"),
     # Tokens
     path('api/token/', TokenObtainPairView.as_view()),
     path('api/token/refresh/', TokenRefreshView.as_view()),
 
 
-    path('api/', include('app.api.message.urls'))
+    path('api/', include('app.api.message.urls')),
+    path('api/', include('app.api.mysites.urls'))
 
 
 
