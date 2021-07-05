@@ -43,8 +43,4 @@ urlpatterns = [
 
     path('api/', include('app.api.message.urls')),
     path('api/', include('app.api.mysites.urls'))
-
-
-
-
 ]

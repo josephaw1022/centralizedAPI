@@ -16,5 +16,5 @@ INSTALLED_APPS = [
     'corsheaders',
     'app.api.message',
     'app.api.mysites'
-
+    'phone_field'
 ]
