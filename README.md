@@ -23,8 +23,10 @@ This is not a quickstart intro for Django. This will take some time, but you wil
 - cd into the config folder
 - make a components folder inside the config folder you're currently in  and create all the files that are shown in the same folder in the repo
 - Do the same thing for the local settings folder within the config foler in the repo and copy it into your folder. This will take time and is tedious. It would probably be easier for you just to copy from my repo considering the project names are the same. 
+- Then copy and paste the content in the settings.py file and paste it into your file
 - To finally get ready to run the app, cd back into the root folder
 - To make the migrations, run the command: <b> python3 manage.py makemigrations --settings=config.local.settings </b> 
 - Then to migrate the app, run the command: <b> python3 manage.py migrate --setting=config.local.settings </b> 
 - Finally, run: <b> python3 manage.py runserver --settings=config.local.settings </b> 
 
+## 
