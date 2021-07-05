@@ -15,5 +15,6 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'corsheaders',
     'app.api.message',
+    'app.api.mysites'
 
 ]
